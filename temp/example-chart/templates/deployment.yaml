@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "example-chart.fullname" . }}
+  labels:
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      name: {{ include "example-chart.name" . }}
+  template:
+    metadata:
+      labels:
+        name: {{ include "example-chart.name" . }}
+    spec:
+      containers:
+      - name: {{ include "example-chart.name" . }}
+        image: {{ .Values.image.repository }}
+        imagePullPolicy: {{ .Values.image.pullpolicy }}
+        ports:
+          - containerPort: {{ .Values.service.targetPort }}
+        env:
+          - name: NAMESPACE
+            value: {{ .Values.deployment.env.value }}
