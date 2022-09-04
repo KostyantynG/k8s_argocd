@@ -6,7 +6,6 @@ metadata:
 spec:
   project: default
   source:
-    chart: example-chart
     repoURL: https://github.com/KostyantynG/k8s_argocd.git
     targetRevision: HEAD
     path: charts/example-chart/templates
