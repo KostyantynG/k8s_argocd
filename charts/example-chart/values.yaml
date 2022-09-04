@@ -6,6 +6,6 @@ replicaCount: 2
 
 deployment:
   env:
-    value: argocd
+    value: default
 
   
