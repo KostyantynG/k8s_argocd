@@ -17,8 +17,6 @@ spec:
       - name: {{ include "example-chart.name" . }}
         image: {{ .Values.image.repository }}
         imagePullPolicy: {{ .Values.image.pullpolicy }}
-        ports:
-          - containerPort: {{ .Values.service.targetPort }}
         env:
           - name: NAMESPACE
             value: {{ .Values.deployment.env.value }}
