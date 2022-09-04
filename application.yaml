@@ -7,6 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://kostyantyng.github.io/k8s_argocd/
+    targetRevision: 0.1.0
     chart: example-chart
   destination:
     server: https://kubernetes.default.svc
