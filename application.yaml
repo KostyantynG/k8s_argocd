@@ -8,7 +8,7 @@ spec:
   source:
     chart: example-chart
     repoURL: https://kostyantyng.github.io/k8s_argocd/
-    path: charts
+    targetRevision: HEAD
     helm:
       releaseName: myapp-argo-application
   destination:
