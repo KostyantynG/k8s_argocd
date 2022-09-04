@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "example-chart.fullname" . }}
+  namespace: {{ .Values.deployment.env.value }}
   labels:
 spec:
   replicas: {{ .Values.replicaCount }}

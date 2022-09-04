@@ -12,6 +12,6 @@ service:
 
 deployment:
   env:
-    value: "default"
+    value: default
 
   
