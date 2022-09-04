@@ -5,11 +5,13 @@ metadata:
   namespace: argocd
 spec:
   project: default
-
   source:
+    chart: example-chart
     repoURL: https://github.com/KostyantynG/k8s_argocd.git
     targetRevision: HEAD
     path: temp/example-chart
+    helm:
+      releaseName: myapp-argo-application
   destination:
     server: https://kubernetes.default.svc
     namespace: appns
