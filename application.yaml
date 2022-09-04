@@ -7,8 +7,7 @@ spec:
   project: default
   source:
     chart: example-chart
-    repoURL: https://github.com/KostyantynG/k8s_argocd.git
-    path: example-chart
+    repoURL: https://kostyantyng.github.io/k8s_argocd/
     helm:
       releaseName: myapp-argo-application
   destination:
