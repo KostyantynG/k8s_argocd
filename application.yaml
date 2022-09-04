@@ -6,17 +6,8 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/KostyantynG/k8s_argocd.git
+    repoURL: https://kostyantyng.github.io/k8s_argocd/
     targetRevision: HEAD
-    path: charts/example-chart/templates
+    chart: example-chart
   destination:
     server: https://kubernetes.default.svc
-    namespace: appns
-
-  syncPolicy:
-    syncOptions:
-    - CreateNamespace=true
-
-    automated:
-      selfHeal: true
-      prune: true
