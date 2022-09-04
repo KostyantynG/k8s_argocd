@@ -9,8 +9,6 @@ spec:
     repoURL: https://github.com/KostyantynG/k8s_argocd.git
     targetRevision: HEAD
     path: charts/example-chart/templates
-    helm:
-      releaseName: myapp-argo-application
   destination:
     server: https://kubernetes.default.svc
     namespace: appns
