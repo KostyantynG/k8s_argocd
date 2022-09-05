@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://kostyantyng.github.io/k8s_argocd
+    repoURL: https://kostyantyng.github.io/k8s_argocd/charts
     targetRevision: 0.1.0
     chart: example-chart
   destination:
